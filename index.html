@@ -1,0 +1,63 @@
+<!--Doctype is used to define... well the document type-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ateeb's HTML Assignment!</title>
+    </head>
+
+    <body>
+        <!--You might see alot of divs here, I just like to keep my code clean by grouping them into little divs, helps
+        for when you need to style-->
+        <div>
+            <h1>HTML Assignment!</h1>
+            <h3>Ateeb Hussain, 2021-10-01</h3>
+        </div>
+
+        <p>This form is designed to submit the topic that you want to make a webiste about!</p>
+
+        <a href="images/ATLSkills.png">Click here to see the IB ATL skills!</a><br><br>
+
+        <img src="images/critical_thinking.png">
+        <ul>
+            <li>Out of all the skills I used this term, the one I used the most was <mark>Critical Thinking</mark>!</li>
+        </ul>
+
+        <!--Start of the forms-->
+        <form>
+            <div>
+                <!--We give each one of our inputs an ID so it can be referenced for styling and for the label to make a 
+                reference to it. We use the type to define the type of the input, and required to show that
+                the input is required to submit the form-->
+                <label for="nameInput">Enter your name here!</label><br>
+                <input type="text" id="nameInput" placeholder="Enter name here!" required>
+            </div><br>
+
+            <div>
+                <label for="emailInput">Enter your email here!</label><br>
+                <input type="email" id="emailInput" placeholder="Enter email here!" required>
+            </div><br>
+
+            <input type="date"><br><br>
+
+            <div>
+                <h2>Choose a topic!</h2>
+                <input type="radio" id="radio1" name="choose_website">
+                <label for="radio1">Scheduling Website</label><br>
+                <input type="radio" id="radio2" name="choose_website">
+                <label for="radio2">Student Aid Website</label><br>
+                <input type="radio" id="radio3" name="choose_website">
+                <label for="radio3">A Schoolwide Social Website</label>
+            </div><br>
+
+            <p>I have selected... <mark>Student Aid Website!</mark></p>
+
+            <div>
+                <label for="textArea">Justify why here!</label><br>
+                <textarea cols="50" rows="20" id="textArea"></textarea><br>
+            </div>
+
+            <!--Submit button-->
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
